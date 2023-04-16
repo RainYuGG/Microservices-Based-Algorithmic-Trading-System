@@ -1,3 +1,4 @@
+__pycache__
 unwanted/
 Storage/mlflow
 Storage/minio/storage/.minio.sys

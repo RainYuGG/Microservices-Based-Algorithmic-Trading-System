@@ -53,14 +53,18 @@ MBATS is based on Docker containers. Running your Infrastructure is as easy as r
 
 
 1. Downlod/Clone the Github Repository (Make sure your Docker Machine has access to the location):  
-  ```git clone https://github.com/saeed349/Microservices-Based-Algorithmic-Trading-System.git```
+  	```
+	git clone https://github.com/saeed349/Microservices-Based-Algorithmic-Trading-System.git
+	```
 2. Update the 'WD' variable in .env file to the location of the Cloned directory.
 	```
   	cd Microservices-Based-Algorithmic-Trading-System
   	sed -i '' 's+/path/to/Microservices-Based-Algorithmic-Trading-System+'$(pwd)'+g' .env
   	```
 3. Run docker compose:  
- ```docker-compose up -d --build```  
+ 	```
+	docker-compose up -d --build
+	```  
 First run would take some time as all the Docker base images need to be downloaded.  
 Once its is running, you can access the following components from the webaddress
     * Jupyter Notebook:http://localhost:8888
@@ -193,7 +197,8 @@ MEvery technology used in this project has a analogues managed service offered i
 
 ## Built With
 This project has been devloped and tested on 2 Docker environments
-* [WSL](https://docs.microsoft.com/en-us/windows/wsl/about)
+* ~~[WSL](https://docs.microsoft.com/en-us/windows/wsl/about)~~
+* Macbook Silicon 
 * [Docker Toolbox](https://docs.docker.com/toolbox/toolbox_install_windows/). 
 * IDE - Visual Studio Code: Main reason being the [Container Debugger Feature](https://code.visualstudio.com/docs/remote/containers#_debugging-in-a-container) 
 

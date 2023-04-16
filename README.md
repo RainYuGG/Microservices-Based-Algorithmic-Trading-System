@@ -55,6 +55,10 @@ MBATS is based on Docker containers. Running your Infrastructure is as easy as r
 1. Downlod/Clone the Github Repository (Make sure your Docker Machine has access to the location):  
   ```git clone https://github.com/saeed349/Microservices-Based-Algorithmic-Trading-System.git```
 2. Update the 'WD' variable in .env file to the location of the Cloned directory.
+	```
+  	cd Microservices-Based-Algorithmic-Trading-System
+  	sed -i '' 's+/path/to/Microservices-Based-Algorithmic-Trading-System+'$(pwd)'+g' .env
+  	```
 3. Run docker compose:  
  ```docker-compose up -d --build```  
 First run would take some time as all the Docker base images need to be downloaded.  

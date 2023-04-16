@@ -17,6 +17,7 @@ services:
 
     mlflow-image:
         container_name: "mlflow-image"
+        platform: linux/amd64
         build:
             context: ./dockerfile_mlflowserver
         working_dir: "/mlflow-image"
@@ -56,6 +57,7 @@ services:
 
     superset:
         container_name: "superset"
+        platform: linux/amd64
         build:
             context: ./dockerfile_superset
         restart: always
@@ -108,6 +110,7 @@ services:
             
     airflow:
         image: airflow
+        platform: linux/amd64
         container_name: "my_airflow"
         build:
             context: ./dockerfile_airflow

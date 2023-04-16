@@ -71,7 +71,10 @@ Once its is running, you can access the following components from the webaddress
     * Minio: http://localhost:9000
 
 4. Run the script to setup up the database schema   
-```.\starter_script.bat```
+	```
+	sudo chmod +x starter_script.bat && \
+	./starter_script.bat
+	```
 5. All the infrastructure and business logic is in *Storage* folder and the necessary components are shared across containers.  
     - [Trading Strategies](./Storage/q_pack/q_strategies)
     - [Analyzers](./Storage/q_pack/q_analyzers)
